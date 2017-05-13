@@ -1,0 +1,131 @@
+table {
+   width: 100%;
+}
+td, th 
+{
+    border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border: 1px solid #d6cbd6; 
+}
+
+/* Basic */
+
+	pre, code {
+		position: relative;
+	}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
+		line-height: 3em;
+	}
+
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+	}
+
+		input[type="submit"].alt,
+		input[type="reset"].alt,
+		input[type="button"].alt,
+		.button.alt {
+			border: solid 2px #e5e5e5;
+		}
+
+/* Box */
+
+	.box {
+		position: relative;
+	}
+
+		.box .image.featured {
+			margin: 2em 0;
+			width: 100%;
+		}
+
+/* Icon */
+
+	.icon.major {
+		position: relative;
+	}
+
+/* Image */
+
+	.image {
+		position: relative;
+	}
+
+		.image img {
+			position: relative;
+		}
+
+/* Header */
+
+	#header nav > ul > li a {
+		color: #fff;
+		display: inline-block;
+		text-decoration: none;
+		border: 0;
+	}
+
+		#header nav > ul > li a.icon:before {
+			color: #fff;
+			margin-right: 0.5em;
+		}
+
+	#header.alt {
+		color: #fff;
+	}
+
+		#header.alt nav > ul > li a:not(.button).icon:before {
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+		#header.alt nav > ul > li.active a:not(.button) {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+
+	.dropotron {
+		border: solid 1px #e5e5e5;
+	}
+
+		.dropotron.level-0 {
+			margin-top: 0;
+		}
+
+			.dropotron.level-0:before {
+				display: none;
+			}
+			
+/* Main */
+
+	#main {
+		position: relative;
+		z-index: 1;
+	}
+
+/* CTA */
+
+	#cta input[type="text"],
+	#cta input[type="password"],
+	#cta input[type="email"],
+	#cta select,
+	#cta textarea {
+		background: #e89980;
+		border: solid 2px #fff;
+	}
+
+	#cta .formerize-placeholder {
+		color: #fff !important;
+	}
