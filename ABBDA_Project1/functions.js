@@ -24,7 +24,38 @@ function myFunction(id) {
     }
 }
 
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+
 function likeFunction(x) {
     x.style.fontWeight = "bold";
     x.innerHTML = "✓ Te gusta";
+}
+
+function myFunction() {
+    var x = document.getElementById("mySelect").selectedIndex;
+    var y = document.getElementById("mySelect").options;
+    alert("Index: " + y[x].index + " is " + y[x].text);
 }
