@@ -14,7 +14,7 @@
 <!-- Menu -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="#home" class="w3-bar-item w3-button"><b>ABBUD</b> Moda</a>
+    <a href="#home" class="w3-bar-item w3-button"><b>ABBUD</b> Moda</a> <p id="demo"></p>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#colecciones" class="w3-bar-item w3-button">Colecciones</a>
@@ -167,18 +167,31 @@
   <div class="w3-container w3-padding-32" id="contacto">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contacto</h3>
     <p>Por favor deja tu comentario sobre nuestra página y/o productos.</p>
-    <form action="/action_page.php" target="_blank">
+    <form action="" target="_blank">
       <input class="w3-input" type="text" placeholder="Nombre" required name="Nombre">
       <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
       <input class="w3-input w3-section" type="text" placeholder="Asunto" required name="Asunto">
+      <select class="w3-input w3-section" id="CuisineList" placeholder="Motivo" required name="Motivo"></select>
       <input class="w3-input w3-section" type="text" placeholder="Comentario" required name="Comentario">
-      <button class="w3-button w3-black w3-section" type="submit">
+      <button class="w3-button w3-black w3-section" onclick="myFunction()" type="submit">
         <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
       </button>
     </form>
   </div>
   
 </div>
+
+<script>
+var cuisines = ["Seleccione","Compra","Promociones","Colecciones"];     
+
+var sel = document.getElementById('CuisineList');
+for(var i = 0; i < cuisines.length; i++) {
+    var opt = document.createElement('option');
+    opt.innerHTML = cuisines[i];
+    opt.value = cuisines[i];
+    sel.appendChild(opt);
+}
+</script>
 
 <!-- Mapa de Google -->
 <div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
